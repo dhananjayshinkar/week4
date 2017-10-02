@@ -34,7 +34,10 @@ echo "Word Count : " . str_word_count($date);
 echo '<hr>';
 echo '<h1>Return the length of a string and print out the result.</h1>';
 echo "Original String : " . $str1 . '<br>';
-echo "String Length : " . strlen($str1);
+echo "String Length : " . strlen($tar);
+echo '<hr>';
 
+echo '<h1>ASCII value of the first character of $tar</h1>';
+echo "ASCII value of the first character of $tar : " . ord($tar) . "<br>";
 
 ?>
