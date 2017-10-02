@@ -25,5 +25,9 @@ if($date == $tar)
 				}
 echo '<hr>';
 
+echo '<h1>Count the number of words in $date</h1>';
+
+echo "Word Count : " . str_word_count($date);
+
 
 ?>
