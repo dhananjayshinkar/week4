@@ -1,4 +1,7 @@
 <?php
+
+$str1="PHP is Awesome";
+
 $date =  date('Y/m/d', time());
 echo "The value of \$date: ".$date."<br>";
 
@@ -26,8 +29,12 @@ if($date == $tar)
 echo '<hr>';
 
 echo '<h1>Count the number of words in $date</h1>';
-
 echo "Word Count : " . str_word_count($date);
+
+echo '<hr>';
+echo '<h1>Return the length of a string and print out the result.</h1>';
+echo "Original String : " . $str1 . '<br>';
+echo "String Length : " . strlen($str1);
 
 
 ?>
