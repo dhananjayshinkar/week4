@@ -1,6 +1,5 @@
 <?php
 
-$str1="PHP is Awesome";
 
 $date =  date('Y/m/d', time());
 echo "The value of \$date: ".$date."<br>";
@@ -33,11 +32,20 @@ echo "Word Count : " . str_word_count($date);
 
 echo '<hr>';
 echo '<h1>Return the length of a string and print out the result.</h1>';
-echo "Original String : " . $str1 . '<br>';
 echo "String Length : " . strlen($tar);
 echo '<hr>';
 
 echo '<h1>ASCII value of the first character of $tar</h1>';
 echo "ASCII value of the first character of $tar : " . ord($tar) . "<br>";
+echo '<hr>';
+
+echo '<h1>last two characters in $date</h1>';
+echo "last two characters in $date : " . substr($date,8) . "<br>";
+echo '<hr>';
+
+echo '<h1>Break $date into an array</h1>';
+print_r (explode('/',$date));
+echo '<hr>';
+
 
 ?>
